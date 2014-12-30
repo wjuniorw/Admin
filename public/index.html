@@ -1,0 +1,30 @@
+<html ng-app="adminApp">
+  <head>
+    <title>single Page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" >
+    <script src="/js/angular.min.js" charset="utf-8"></script>
+    <script src="/js/angular-route.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </head>
+  <body ng-controller="ctrlUm">
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div id="name" class="navbar-header">
+            <a href="#/">Teste angularjs</a>
+          </div>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li> <a href="#/" class="fa fa-home">Home</a></li>
+          <li><a href="#sobre">Sobre</a> </li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main">
+      <div ng-view>
+      </div>
+    </div>
+  </body>
+</html>
